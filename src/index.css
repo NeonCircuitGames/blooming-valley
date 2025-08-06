@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Blooming Valley Color Palette */
+    --background: 210 15% 95%;
+    --foreground: 150 20% 20%;
+
+    --card: 210 15% 98%;
+    --card-foreground: 150 20% 20%;
+
+    --popover: 210 15% 98%;
+    --popover-foreground: 150 20% 20%;
+
+    /* Deep Forest Green as primary */
+    --primary: 150 26% 23%;
+    --primary-foreground: 210 15% 95%;
+
+    /* Dusty Lavender as secondary */
+    --secondary: 255 18% 65%;
+    --secondary-foreground: 150 26% 23%;
+
+    /* Warm Amber for accents */
+    --accent: 38 52% 60%;
+    --accent-foreground: 150 26% 23%;
+
+    /* Slate Gray as muted */
+    --muted: 210 10% 55%;
+    --muted-foreground: 210 15% 35%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 15% 85%;
+    --input: 210 15% 90%;
+    --ring: 150 26% 23%;
+
+    --radius: 0.75rem;
+
+    /* Custom Blooming Valley tokens */
+    --forest-green: 150 26% 23%;
+    --dusty-lavender: 255 18% 65%;
+    --warm-amber: 38 52% 60%;
+    --slate-gray: 210 10% 55%;
+    --mist: 210 15% 92%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--slate-gray) / 0.8), hsl(var(--dusty-lavender) / 0.6));
+    --gradient-section: linear-gradient(180deg, hsl(var(--mist)), hsl(var(--background)));
+    --shadow-soft: 0 10px 40px -15px hsl(var(--forest-green) / 0.2);
+    --shadow-amber: 0 5px 20px -5px hsl(var(--warm-amber) / 0.3);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 150 26% 12%;
+    --foreground: 210 15% 85%;
+
+    --card: 150 26% 15%;
+    --card-foreground: 210 15% 85%;
+
+    --popover: 150 26% 15%;
+    --popover-foreground: 210 15% 85%;
+
+    --primary: 210 15% 85%;
+    --primary-foreground: 150 26% 12%;
+
+    --secondary: 255 18% 40%;
+    --secondary-foreground: 210 15% 85%;
+
+    --accent: 38 52% 45%;
+    --accent-foreground: 150 26% 12%;
+
+    --muted: 210 10% 30%;
+    --muted-foreground: 210 15% 65%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 150 26% 25%;
+    --input: 150 26% 20%;
+    --ring: 210 15% 85%;
+
+    /* Dark mode adjustments */
+    --forest-green: 150 26% 15%;
+    --dusty-lavender: 255 18% 40%;
+    --warm-amber: 38 52% 45%;
+    --slate-gray: 210 10% 30%;
+    --mist: 150 26% 18%;
+    
+    --gradient-hero: linear-gradient(135deg, hsl(var(--slate-gray) / 0.9), hsl(var(--dusty-lavender) / 0.7));
+    --gradient-section: linear-gradient(180deg, hsl(var(--mist)), hsl(var(--background)));
+    --shadow-soft: 0 10px 40px -15px hsl(0 0% 0% / 0.4);
+    --shadow-amber: 0 5px 20px -5px hsl(var(--warm-amber) / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
