@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Play, Pause, Globe } from "lucide-react";
+import { Play, Pause } from "lucide-react";
 import { useState } from "react";
 import valleyOverview from "@/assets/valley-overview.jpg";
 
@@ -69,7 +69,9 @@ const HeroSection = () => {
           className="w-12 h-12 bg-primary-foreground/20 border border-primary-foreground/30 rounded-full flex items-center justify-center hover:bg-primary-foreground/30 transition-all duration-300"
           aria-label={`Cambiar a ${language === 'es' ? 'inglés' : 'español'}`}
         >
-          <Globe className="w-5 h-5 text-primary-foreground" />
+          <span className="text-xs font-bold text-primary-foreground">
+            {language.toUpperCase()}
+          </span>
         </button>
       </div>
       
