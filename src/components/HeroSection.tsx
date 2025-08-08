@@ -1,20 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Play, Pause } from "lucide-react";
 import { useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import valleyOverview from "@/assets/valley-overview.jpg";
 
 const HeroSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [language, setLanguage] = useState<'es' | 'en'>('es');
+  const { language, toggleLanguage } = useLanguage();
 
   const toggleMusic = () => {
     setIsPlaying(!isPlaying);
     // Aquí se implementaría la lógica de reproducción de música
-  };
-
-  const toggleLanguage = () => {
-    setLanguage(language === 'es' ? 'en' : 'es');
-    // Aquí se implementaría la lógica de cambio de idioma
   };
 
   const texts = {
@@ -28,7 +24,7 @@ const HeroSection = () => {
     en: {
       title: "Blooming Valley",
       subtitle1: "A forgotten corner. A life to rebuild.",
-      subtitle2: "A journey of silence, memory and roots.",
+      subtitle2: "",
       trailer: "Watch Trailer",
       wishlist: "Wishlist on Steam"
     }
@@ -69,7 +65,7 @@ const HeroSection = () => {
           className="w-12 h-12 bg-primary-foreground/20 border border-primary-foreground/30 rounded-full flex items-center justify-center hover:bg-primary-foreground/30 transition-all duration-300"
           aria-label={`Cambiar a ${language === 'es' ? 'inglés' : 'español'}`}
         >
-          <span className="text-xs font-bold text-primary-foreground">
+          <span className="text-sm font-bold text-primary-foreground">
             {language.toUpperCase()}
           </span>
         </button>
@@ -85,9 +81,11 @@ const HeroSection = () => {
           <p className="font-inter text-xl md:text-2xl text-primary-foreground/90 font-light">
             {texts[language].subtitle1}
           </p>
-          <p className="font-inter text-lg md:text-xl text-primary-foreground/80 font-light">
-            {texts[language].subtitle2}
-          </p>
+           {texts[language].subtitle2 && (
+             <p className="font-inter text-lg md:text-xl text-primary-foreground/80 font-light">
+               {texts[language].subtitle2}
+             </p>
+           )}
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
