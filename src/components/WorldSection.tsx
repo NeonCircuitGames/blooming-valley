@@ -8,17 +8,17 @@ const WorldSection = () => {
   const texts = {
     es: {
       title: "Un Mundo por Descubrir",
-      subtitle: "Explora cada rincón de este valle lleno de misterios y recuerdos",
+      subtitle: "Explora cada rincón de este valle",
       locations: [
         {
-          name: "El Valle Central",
+          name: "El Valle",
           description: "Tu hogar ancestral, lleno de posibilidades",
           icon: Mountain,
           position: "top-1/2 left-1/2"
         },
         {
           name: "La Aldea",
-          description: "Donde viven los últimos habitantes",
+          description: "Donde vive la comunidad",
           icon: Home,
           position: "top-1/3 right-1/4"
         },
@@ -30,7 +30,7 @@ const WorldSection = () => {
         },
         {
           name: "El Bosque Místico",
-          description: "Hogar de espíritus y secretos antiguos",
+          description: "Hogar de los espíritus del bosque y secretos",
           icon: TreePine,
           position: "top-1/4 left-1/4"
         }
@@ -38,17 +38,17 @@ const WorldSection = () => {
     },
     en: {
       title: "A World to Discover",
-      subtitle: "Explore every corner of this valley full of mysteries and memories",
+      subtitle: "Explore every corner of this valley",
       locations: [
         {
-          name: "The Central Valley",
+          name: "The Valley",
           description: "Your ancestral home, full of possibilities",
           icon: Mountain,
           position: "top-1/2 left-1/2"
         },
         {
           name: "The Village",
-          description: "Where the last inhabitants live",
+          description: "Where the community lives",
           icon: Home,
           position: "top-1/3 right-1/4"
         },
@@ -60,7 +60,7 @@ const WorldSection = () => {
         },
         {
           name: "The Mystic Forest",
-          description: "Home to spirits and ancient secrets",
+          description: "Home to forest spirits and secrets",
           icon: TreePine,
           position: "top-1/4 left-1/4"
         }

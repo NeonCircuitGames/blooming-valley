@@ -17,19 +17,19 @@ const features = [
   {
     icon: Users,
     title: "Conecta con los aldeanos",
-    description: "Cada personaje guarda una historia. Algunas, rotas. Otras, aún sin contar.",
+    description: "Cada personaje guarda una historia. Algunas, conocidas. Otras, aún sin contar.",
     color: "text-warm-amber"
   },
   {
     icon: TreePine,
     title: "Explora sin combatir",
-    description: "Encuentros con espíritus del bosque: evita, observa, interpreta.",
+    description: "Conoce a los espíritus del bosque: observa e interpreta.",
     color: "text-slate-gray"
   },
   {
     icon: Sparkles,
     title: "Un mundo con alma",
-    description: "Eventos misteriosos, rituales antiguos y secretos por descubrir.",
+    description: "Eventos sorprendentes y secretos de la naturaleza por descubrir.",
     color: "text-dusty-lavender"
   }
 ];
@@ -43,7 +43,7 @@ const FeaturesSection = () => {
             Características Clave
           </h2>
           <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto">
-            Descubre las mecánicas que hacen de Blooming Valley una experiencia única y contemplativa.
+            Descubre las mecánicas que hacen de Blooming Valley una experiencia única.
           </p>
         </div>
         

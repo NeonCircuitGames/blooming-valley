@@ -13,17 +13,18 @@ const HeroSection = () => {
     // Aquí se implementaría la lógica de reproducción de música
   };
 
+  const trailerUrl = "https://www.youtube.com/watch?v=w7e_W-a39jQ&ab_channel=NeonCircuitGames";
+
   const texts = {
     es: {
       title: "Blooming Valley",
-      subtitle1: "Un rincón olvidado. Una vida por reconstruir.",
-      subtitle2: "Un viaje de silencio, memoria y raíces.",
+      subtitle1: "Un rincón en la naturaleza. Una vida por construir.",
       trailer: "Ver Tráiler",
       wishlist: "Wishlist en Steam"
     },
     en: {
       title: "Blooming Valley",
-      subtitle1: "A forgotten corner. A life to rebuild.",
+      subtitle1: "A corner in nature. A life to build.",
       subtitle2: "",
       trailer: "Watch Trailer",
       wishlist: "Wishlist on Steam"
@@ -89,7 +90,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl animate-fade-in">
-        <h1 className="font-playfair text-6xl md:text-8xl font-bold bg-gradient-to-r from-primary-foreground via-warm-amber to-primary-foreground bg-clip-text text-transparent mb-6 tracking-tight animate-pulse-slow">
+        <h1 className="font-playfair text-6xl md:text-8xl font-bold text-white px-6 py-2 rounded-lg inline-block mb-6 tracking-tight animate-pulse-slow bg-transparent">
           {texts[language].title}
         </h1>
         
@@ -106,19 +107,20 @@ const HeroSection = () => {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
-            size="lg" 
-            className="bg-warm-amber hover:bg-warm-amber/90 text-primary font-inter font-medium px-8 py-3 rounded-lg shadow-amber transition-all duration-300 hover:scale-105"
-          >
-            {texts[language].trailer}
-          </Button>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="group border-primary-foreground/30 text-forest-green hover:text-forest-green hover:bg-primary-foreground/10 bg-primary-foreground/10 font-inter font-medium px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] relative overflow-hidden"
-          >
-            <span className="absolute inset-0 border border-primary-foreground/20 rounded-lg animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            {texts[language].wishlist}
-          </Button>
+    size="lg" 
+    className="bg-warm-amber hover:bg-warm-amber/90 text-primary font-inter font-medium px-8 py-3 rounded-lg shadow-amber transition-all duration-300 hover:scale-105"
+    onClick={() => window.open(trailerUrl, "_blank")}
+  >
+    {texts[language].trailer}
+  </Button>
+  <Button 
+    variant="outline" 
+    size="lg"
+    className="group border-primary-foreground/30 text-forest-green hover:text-forest-green hover:bg-primary-foreground/10 bg-primary-foreground/10 font-inter font-medium px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] relative overflow-hidden"
+  >
+    <span className="absolute inset-0 border border-primary-foreground/20 rounded-lg animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+    {texts[language].wishlist}
+  </Button>
         </div>
       </div>
       

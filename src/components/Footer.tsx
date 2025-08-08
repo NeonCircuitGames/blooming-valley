@@ -15,8 +15,8 @@ const Footer = () => {
               Blooming Valley
             </h3>
             <p className="font-inter text-primary-foreground/80 leading-relaxed mb-6 max-w-md">
-              Un RPG de simulación de vida que explora la belleza melancólica de la vida rural, 
-              los vínculos humanos y la búsqueda de pertenencia.
+              Un RPG de simulación de vida que explora la belleza de la vida rural, 
+              los vínculos humanos y la búsqueda de pertenencia al territorio.
             </p>
             
             {/* Newsletter */}
@@ -76,7 +76,7 @@ const Footer = () => {
             <h4 className="font-playfair text-xl font-semibold mb-4">Contacto</h4>
             <div className="space-y-3 font-inter">
               <p className="text-primary-foreground/80 text-sm">
-                hello@bloomingvalley.studio
+                hello@neoncircuitgames.com
               </p>
               
               {/* Social Media */}
@@ -113,11 +113,11 @@ const Footer = () => {
         <div className="container mx-auto px-6 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="font-inter text-sm text-primary-foreground/80">
-              © 2024 Blooming Valley Studio. Hecho con <Heart className="w-4 h-4 inline text-warm-amber" /> en Perú.
+              © 2025 Neon Circuit Games. Hecho con <Heart className="w-4 h-4 inline text-warm-amber" /> en Arequipa, Perú.
             </div>
             
             <div className="font-inter text-sm text-primary-foreground/80">
-              Desarrollado con Unreal Engine
+              Videojuego desarrollado con Unreal Engine
             </div>
           </div>
         </div>

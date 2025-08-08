@@ -20,7 +20,7 @@ const ProjectSection = () => {
             <div className="p-8 md:p-12">
               <div className="prose prose-lg max-w-none">
                 <p className="font-inter text-lg leading-relaxed text-foreground mb-6">
-                  Desarrollado por un pequeño estudio peruano, <span className="font-semibold text-primary">Blooming Valley</span> nace del deseo de crear un juego que celebre la vida sencilla, pero no sin sombras. Estamos construyendo un vertical slice con Unreal Engine durante 7 meses, buscando transmitir una historia de pertenencia, pérdida y reconstrucción emocional.
+                  Desarrollado por "Neon Circuit Games", un estudio peruano basado en la ciudad de Arequipa. <span className="font-semibold text-primary">Blooming Valley</span> nace del deseo de crear un juego que celebre la vida sencilla en el valle. Estamos construyendo un vertical slice con Unreal Engine durante 7 meses, buscando transmitir una historia de pertenencia y conexión con la naturaleza.
                 </p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
@@ -50,7 +50,7 @@ const ProjectSection = () => {
                     "Queremos que cada jugador encuentre en Blooming Valley un espejo de su propia búsqueda de sentido y conexión."
                   </p>
                   <p className="font-inter text-sm text-muted-foreground">
-                    — Blooming Valley Studio
+                    — Neon Circuit Games
                   </p>
                 </div>
               </div>
@@ -76,10 +76,6 @@ const ProjectSection = () => {
                 Descargar Dossier PDF
               </Button>
             </div>
-            
-            <p className="font-inter text-sm text-muted-foreground">
-              Sé parte de esta historia desde el principio
-            </p>
           </div>
           
           {/* Atmospheric decoration */}

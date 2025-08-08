@@ -27,14 +27,14 @@ const AboutSection = () => {
             <div className="p-8 md:p-12">
               <div className="prose prose-lg max-w-none">
                 <h3 className="font-playfair text-2xl font-semibold text-warm-amber mb-4">
-                  "Hereda un valle que alguna vez floreció."
+                  "Hereda un valle que busca florecer."
                 </h3>
                 <p className="font-inter text-lg leading-relaxed text-foreground mb-6">
-                  <span className="font-semibold text-primary">Blooming Valley</span> es un RPG de simulación de vida en tercera persona, donde el silencio pesa tanto como la tierra que cultivas. Heredas una parcela abandonada en un valle melancólico, un lugar que alguna vez floreció, y que ahora espera a que alguien le devuelva el alma.
+                  <span className="font-semibold text-primary">Blooming Valley</span> es un RPG de simulación de vida en tercera persona, donde la tranquilidad pesa tanto como la tierra que cultivas. Heredas una parcela en un valle amigable, un lugar que busca florecer.
                 </p>
                 
                 <p className="font-inter text-lg leading-relaxed text-foreground mb-6">
-                  Cultiva, pesca, cocina y explora, pero también <em className="text-dusty-lavender font-medium">escucha</em>: hay ecos en los bosques, historias olvidadas en cada rincón, y criaturas que te observan desde la niebla.
+                  Cultiva, pesca, cocina y explora, pero también <em className="text-dusty-lavender font-medium">escucha</em>: hay ecos en los bosques, historias en cada rincón, y criaturas que te observan desde la naturaleza.
                 </p>
                 
                 <div className="mt-8 p-6 bg-mist rounded-lg border-l-4 border-warm-amber">

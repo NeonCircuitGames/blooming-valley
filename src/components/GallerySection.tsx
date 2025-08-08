@@ -14,7 +14,7 @@ const galleryItems = [
   {
     image: valleyOverview,
     title: "El Valle",
-    caption: "Donde la niebla susurra nombres que olvidaste."
+    caption: "Donde la naturaleza te rodea y acompaña en la aventura."
   },
   {
     image: villageScene,
@@ -39,7 +39,7 @@ const galleryItems = [
   {
     image: forestSpiritScene,
     title: "Los Espíritus",
-    caption: "Guardianes silenciosos de secretos antiguos."
+    caption: "Guardianes silenciosos de secretos de la naturaleza."
   }
 ];
 
@@ -62,7 +62,7 @@ const GallerySection = () => {
             Un Mundo por Descubrir
           </h2>
           <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto">
-            Cada rincón del valle guarda una historia, un misterio, una invitación a la contemplación.
+            Cada rincón del valle guarda una historia... una invitación a sembrar y construir.
           </p>
         </div>
 
