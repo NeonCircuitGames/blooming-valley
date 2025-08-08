@@ -26,6 +26,9 @@ const AboutSection = () => {
           <Card className="bg-card/80 backdrop-blur-sm border-border/50 shadow-soft animate-fade-in">
             <div className="p-8 md:p-12">
               <div className="prose prose-lg max-w-none">
+                <h3 className="font-playfair text-2xl font-semibold text-warm-amber mb-4">
+                  "Hereda un valle que alguna vez floreció."
+                </h3>
                 <p className="font-inter text-lg leading-relaxed text-foreground mb-6">
                   <span className="font-semibold text-primary">Blooming Valley</span> es un RPG de simulación de vida en tercera persona, donde el silencio pesa tanto como la tierra que cultivas. Heredas una parcela abandonada en un valle melancólico, un lugar que alguna vez floreció, y que ahora espera a que alguien le devuelva el alma.
                 </p>

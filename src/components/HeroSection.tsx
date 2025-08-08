@@ -71,9 +71,25 @@ const HeroSection = () => {
         </button>
       </div>
       
+      {/* Floating particles animation */}
+      <div className="absolute inset-0 z-5 pointer-events-none overflow-hidden">
+        {Array.from({ length: 12 }).map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-2 h-2 bg-primary-foreground/30 rounded-full animate-float opacity-60"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 4}s`,
+              animationDuration: `${4 + Math.random() * 2}s`
+            }}
+          />
+        ))}
+      </div>
+
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl animate-fade-in">
-        <h1 className="font-playfair text-6xl md:text-8xl font-bold text-primary-foreground mb-6 tracking-tight">
+        <h1 className="font-playfair text-6xl md:text-8xl font-bold bg-gradient-to-r from-primary-foreground via-warm-amber to-primary-foreground bg-clip-text text-transparent mb-6 tracking-tight animate-pulse-slow">
           {texts[language].title}
         </h1>
         
@@ -98,8 +114,9 @@ const HeroSection = () => {
           <Button 
             variant="outline" 
             size="lg"
-            className="border-primary-foreground/30 text-forest-green hover:text-forest-green hover:bg-primary-foreground/10 bg-primary-foreground/10 font-inter font-medium px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105"
+            className="group border-primary-foreground/30 text-forest-green hover:text-forest-green hover:bg-primary-foreground/10 bg-primary-foreground/10 font-inter font-medium px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] relative overflow-hidden"
           >
+            <span className="absolute inset-0 border border-primary-foreground/20 rounded-lg animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             {texts[language].wishlist}
           </Button>
         </div>
